@@ -1,0 +1,2 @@
+górny pasek - #0b1626
+dolny pasek - #ffffff opacity 70%
