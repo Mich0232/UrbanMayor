@@ -9,6 +9,7 @@ public class OpenPanel : MonoBehaviour {
     private bool setActive = true;
 	public void Open()
     {
+
         if (panel.activeInHierarchy) setActive = false;
         else setActive = true;
         foreach(Transform child in panel.transform.parent)

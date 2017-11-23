@@ -104,20 +104,20 @@ public class CreateBuilding : MonoBehaviour {
             if (building.GetComponent<Building>().type == BuildingType.PowerPlant)
             {
                 GameController.instance.buildPowerPlant = building.gameObject;   
-                tutorialTap.GetComponent<DialogTap>().DialogIn();
+                //tutorialTap.GetComponent<DialogTap>().DialogIn();
             }               
 			else if (building.GetComponent<Building>().type == BuildingType.WaterTower)
             {
                 GameController.instance.buildWaterTower = building.gameObject;
-                tutorialTap.GetComponent<DialogTap>().DialogIn();
+                //tutorialTap.GetComponent<DialogTap>().DialogIn();
             }
             else if (building.GetComponent<Building>().type == BuildingType.House)
 			{
-				tutorialTap.GetComponent<DialogTap>().DialogIn();
+				//tutorialTap.GetComponent<DialogTap>().DialogIn();
 			}
 			else if (building.GetComponent<Building>().type == BuildingType.Cinema)
 			{
-				tutorialTap.GetComponent<DialogTap>().DialogIn();
+				//tutorialTap.GetComponent<DialogTap>().DialogIn();
 			}
                 
             if (GameController.instance.BasicBuildingsReady)
@@ -136,6 +136,8 @@ public class CreateBuilding : MonoBehaviour {
         }
 		else if (power != null && building.GetComponent<Building>().type == BuildingType.PowerPlant)
 			gameObject.SetActive(false);
+
+        UIController.instance.FocusOnClickPanel();
     }
 
     public void ShowDots()

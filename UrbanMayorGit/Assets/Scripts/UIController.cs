@@ -28,6 +28,9 @@ public class UIController : MonoBehaviour {
     bool alreadyDisabled = false;
     public GameObject buildingObject;
     public GameObject buildingsPanel;
+
+    [Header("Other")]
+    public GameObject clickPanel;
     
 
     private void Awake()
@@ -41,6 +44,9 @@ public class UIController : MonoBehaviour {
 
     private void AddOnClickEffect()  // Add behaviour to button
     {
+        resourceButton.gameObject.SetActive(true);
+        resourceButton.gameObject.transform.parent.gameObject.SetActive(true);
+
         Building basicPowerPlant;
         Building basicWaterTower;
 
@@ -74,6 +80,17 @@ public class UIController : MonoBehaviour {
 			AddOnClickEffect();
 			alreadyDisabled = true;
         }
+
+    }
+
+    public void FocusOnClickPanel()
+    {
+
+        foreach (Transform child in clickPanel.transform.parent)
+        {
+            child.gameObject.SetActive(false);
+        }
+        clickPanel.SetActive(true);
 
     }
 
