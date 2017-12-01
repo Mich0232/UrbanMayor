@@ -6,6 +6,15 @@ TagManager:
   tags:
   - icons
   - jub
+  - CenterPanel
+  - TownHall
+  - Jeweller
+  - Cinema
+  - Hotel
+  - Warehouse
+  - TaxOffice
+  - PowerPlant
+  - WaterTower
   layers:
   - Default
   - TransparentFX
