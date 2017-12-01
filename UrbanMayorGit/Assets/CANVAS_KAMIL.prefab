@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 224409476290553172}
   m_Layer: 5
   m_Name: CenterPanel
-  m_TagString: Untagged
+  m_TagString: CenterPanel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 224958927167625226}
   m_Layer: 5
   m_Name: US
-  m_TagString: Untagged
+  m_TagString: TaxOffice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 224629806306255652}
   m_Layer: 5
   m_Name: Hotel
-  m_TagString: Untagged
+  m_TagString: Hotel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 224642920411938248}
   - component: {fileID: 222799859946334698}
   - component: {fileID: 114246515154960036}
+  - component: {fileID: 114558305589381598}
   m_Layer: 5
   m_Name: Main Panel
   m_TagString: Untagged
@@ -297,7 +298,7 @@ GameObject:
   - component: {fileID: 224974922163181326}
   m_Layer: 5
   m_Name: Elektrownia
-  m_TagString: Untagged
+  m_TagString: PowerPlant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -515,6 +516,7 @@ GameObject:
   - component: {fileID: 224191006886842534}
   - component: {fileID: 222917266943438412}
   - component: {fileID: 114623861899285474}
+  - component: {fileID: 114128316175504686}
   m_Layer: 5
   m_Name: Main Panel
   m_TagString: Untagged
@@ -686,6 +688,7 @@ GameObject:
   - component: {fileID: 224006858505012540}
   - component: {fileID: 222256967905691220}
   - component: {fileID: 114184037881405792}
+  - component: {fileID: 114197896647913514}
   m_Layer: 5
   m_Name: Main Panel
   m_TagString: Untagged
@@ -1029,11 +1032,11 @@ GameObject:
   - component: {fileID: 224033730852539550}
   m_Layer: 5
   m_Name: Kino
-  m_TagString: Untagged
+  m_TagString: Cinema
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1444006928623326
 GameObject:
   m_ObjectHideFlags: 1
@@ -1435,7 +1438,7 @@ GameObject:
   - component: {fileID: 224737447645196772}
   m_Layer: 5
   m_Name: Jubiler
-  m_TagString: jub
+  m_TagString: Jeweller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1552,6 +1555,7 @@ GameObject:
   - component: {fileID: 224778216545552558}
   - component: {fileID: 222681230783466314}
   - component: {fileID: 114204508295324042}
+  - component: {fileID: 114682769008553366}
   m_Layer: 5
   m_Name: Main Panel
   m_TagString: Untagged
@@ -1569,6 +1573,7 @@ GameObject:
   - component: {fileID: 224511695778579030}
   - component: {fileID: 222666268213247896}
   - component: {fileID: 114850709563551336}
+  - component: {fileID: 114868012848085506}
   m_Layer: 5
   m_Name: Main Panel
   m_TagString: Untagged
@@ -1872,7 +1877,7 @@ GameObject:
   - component: {fileID: 224982520260836302}
   m_Layer: 5
   m_Name: Ratusz
-  m_TagString: Untagged
+  m_TagString: TownHall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2134,13 +2139,14 @@ GameObject:
   - component: {fileID: 224662964805852916}
   - component: {fileID: 222438638207970400}
   - component: {fileID: 114277924403534914}
+  - component: {fileID: 114277649057745528}
   m_Layer: 5
   m_Name: Main Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1845929325544520
 GameObject:
   m_ObjectHideFlags: 1
@@ -2292,13 +2298,14 @@ GameObject:
   - component: {fileID: 224830564698814018}
   - component: {fileID: 222239696223005566}
   - component: {fileID: 114250602697484448}
+  - component: {fileID: 114241621900246762}
   m_Layer: 5
   m_Name: Main Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1893789191488502
 GameObject:
   m_ObjectHideFlags: 1
@@ -2452,7 +2459,7 @@ GameObject:
   - component: {fileID: 224831921248888202}
   m_Layer: 5
   m_Name: Magazyn
-  m_TagString: Untagged
+  m_TagString: Warehouse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2503,12 +2510,12 @@ GameObject:
   m_Component:
   - component: {fileID: 224272599824007990}
   m_Layer: 5
-  m_Name: WC
-  m_TagString: Untagged
+  m_Name: WaterTower
+  m_TagString: WaterTower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1977258964122292
 GameObject:
   m_ObjectHideFlags: 1
@@ -2978,7 +2985,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114828338731030040}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114682769008553366}
+        m_MethodName: ClosePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114030288105528900
@@ -3568,6 +3586,17 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114128316175504686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227292171856540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f10648aa860514493fc5e00156caab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114138622423205244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3699,7 +3728,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114469005143722462}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114197896647913514}
+        m_MethodName: ClosePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114172170668699296
@@ -3947,6 +3987,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114197896647913514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1298036016642802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f10648aa860514493fc5e00156caab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114203331967078772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4321,6 +4372,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114241621900246762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886650732244186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f10648aa860514493fc5e00156caab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114242974717724822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4560,6 +4622,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114277649057745528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824163275052956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f10648aa860514493fc5e00156caab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114277924403534914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5189,6 +5262,7 @@ MonoBehaviour:
   buildingObject: {fileID: 1333189736378876}
   buildingsPanel: {fileID: 1666450846993804}
   clickPanel: {fileID: 1885793428678820}
+  centerPanel: {fileID: 1042510407452680}
 --- !u!114 &114323639601974596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5227,7 +5301,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114208936324771722}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114868012848085506}
+        m_MethodName: ClosePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114324084069934976
@@ -5886,7 +5971,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114926147378591608}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114241621900246762}
+        m_MethodName: ClosePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114439471738133240
@@ -6564,8 +6660,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114167757478549928}
-        m_MethodName: CloseParent
+      - m_Target: {fileID: 114558305589381598}
+        m_MethodName: ClosePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6911,6 +7007,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114558305589381598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1094860769683138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f10648aa860514493fc5e00156caab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114558473636967114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7456,6 +7563,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114682769008553366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641439917344100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f10648aa860514493fc5e00156caab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114685886740246974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7780,7 +7898,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114798282940054964}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114128316175504686}
+        m_MethodName: ClosePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114734397615977058
@@ -8319,8 +8448,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114894581738893520}
-        m_MethodName: Onclick
+      - m_Target: {fileID: 114277649057745528}
+        m_MethodName: ClosePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8653,6 +8782,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Odpakuj
+--- !u!114 &114868012848085506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648606989562266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f10648aa860514493fc5e00156caab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114868017727663426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -13274,7 +13414,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 3.7403445, y: 63.58622}
-  m_ConnectedAnchor: {x: 193.9634, y: 510.03455}
+  m_ConnectedAnchor: {x: 257.27698, y: 675.7435}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
