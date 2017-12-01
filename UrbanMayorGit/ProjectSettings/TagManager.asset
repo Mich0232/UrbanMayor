@@ -15,6 +15,7 @@ TagManager:
   - TaxOffice
   - PowerPlant
   - WaterTower
+  - ClickPanel
   layers:
   - Default
   - TransparentFX

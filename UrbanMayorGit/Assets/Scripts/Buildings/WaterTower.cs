@@ -23,7 +23,8 @@ public class WaterTower : Building
 	{
 		base.Interact();
         UIController.instance.OpenPanel(Panel.WaterTower);
-	}
+        UIController.instance.GetClickPanel().SetActive(false);
+    }
 
 	public override void OnBuild()
 	{

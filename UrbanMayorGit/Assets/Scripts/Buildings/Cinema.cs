@@ -8,7 +8,7 @@ public class Cinema : Building {
     {
         base.Interact();
         UIController.instance.OpenPanel(Panel.Cinema);
-
+        UIController.instance.GetClickPanel().SetActive(false);
     }
 
 }
