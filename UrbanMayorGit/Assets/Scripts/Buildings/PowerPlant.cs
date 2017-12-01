@@ -22,6 +22,7 @@ public class PowerPlant : Building
 	public override void Interact()
 	{
 		base.Interact();
+        print("Interact Powerplant");
         UIController.instance.OpenPanel(Panel.PowerPlant);
     }
 
