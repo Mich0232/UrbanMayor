@@ -107,6 +107,11 @@ public class UIController : MonoBehaviour {
         lvlDisplay.text = currentLVL.ToString();
     }
 
+    public GameObject GetClickPanel()
+    {
+        return clickPanel;
+    }
+
     public void OpenPanel(Panel buildingPanel)
     {
         //GameObject centerPanel = GameObject.FindGameObjectWithTag("CenterPanel");

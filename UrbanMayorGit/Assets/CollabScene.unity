@@ -804,12 +804,12 @@ Prefab:
     - target: {fileID: 224793261234466694, guid: 3c678f99fce7044e8a35cae0e2d98980,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 195
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 224793261234466694, guid: 3c678f99fce7044e8a35cae0e2d98980,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 346.5
+      value: 455
       objectReference: {fileID: 0}
     - target: {fileID: 224793261234466694, guid: 3c678f99fce7044e8a35cae0e2d98980,
         type: 2}
@@ -1049,6 +1049,29 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.y
       value: -330.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396330364885124, guid: 3c678f99fce7044e8a35cae0e2d98980,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396330364885124, guid: 3c678f99fce7044e8a35cae0e2d98980,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.2172794
+      objectReference: {fileID: 0}
+    - target: {fileID: 114396330364885124, guid: 3c678f99fce7044e8a35cae0e2d98980,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.2172794
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885793428678820, guid: 3c678f99fce7044e8a35cae0e2d98980, type: 2}
+      propertyPath: m_TagString
+      value: ClickPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885793428678820, guid: 3c678f99fce7044e8a35cae0e2d98980, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c678f99fce7044e8a35cae0e2d98980, type: 2}

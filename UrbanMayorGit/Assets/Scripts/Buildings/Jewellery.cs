@@ -16,6 +16,7 @@ public class Jewellery : Building {
     {
         base.Interact();
         UIController.instance.OpenPanel(Panel.Jeweller);
+        UIController.instance.GetClickPanel().SetActive(false);
 
     }
 }

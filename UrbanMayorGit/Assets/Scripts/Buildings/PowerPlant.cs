@@ -24,6 +24,7 @@ public class PowerPlant : Building
 		base.Interact();
         print("Interact Powerplant");
         UIController.instance.OpenPanel(Panel.PowerPlant);
+        UIController.instance.GetClickPanel().SetActive(false);
     }
 
 	public override void OnBuild()

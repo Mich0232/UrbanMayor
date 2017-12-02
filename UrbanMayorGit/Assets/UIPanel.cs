@@ -7,5 +7,6 @@ public class UIPanel : MonoBehaviour {
 	public void ClosePanel()
     {
         UIController.instance.OpenPanel(Panel.CloseAll);
+        UIController.instance.GetClickPanel().SetActive(true);
     }
 }

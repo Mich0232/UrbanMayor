@@ -10,7 +10,7 @@ public class TownHall : Building {
         base.Interact();
         print("Test");
         UIController.instance.OpenPanel(Panel.TownHall);
-
+        UIController.instance.GetClickPanel().SetActive(false);
     }
 
 }
