@@ -151,7 +151,6 @@ public class CreateBuilding : MonoBehaviour {
 		if (water != null && building.GetComponent<Building>().type == BuildingType.WaterTower)
         {
             gameObject.SetActive(false);
-
         }
 		else if (power != null && building.GetComponent<Building>().type == BuildingType.PowerPlant)
 			gameObject.SetActive(false);
