@@ -141,7 +141,8 @@ public class CreateBuilding : MonoBehaviour {
 
                 UIController.instance.DisableBasicBuildingsInStore();
             }
-                
+            print("Test");
+                UIController.instance.FocusOnClickPanel();
 
 		}
 
@@ -153,7 +154,7 @@ public class CreateBuilding : MonoBehaviour {
 		else if (power != null && building.GetComponent<Building>().type == BuildingType.PowerPlant)
 			gameObject.SetActive(false);
         
-        //UIController.instance.FocusOnClickPanel();
+        
     }
 
     public void ShowDots()
