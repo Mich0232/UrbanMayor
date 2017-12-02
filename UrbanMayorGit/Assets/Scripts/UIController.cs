@@ -87,11 +87,8 @@ public class UIController : MonoBehaviour {
     public void FocusOnClickPanel()
     {
 
-        foreach (Transform child in clickPanel.transform.parent)
-        {
-            child.gameObject.SetActive(false);
-        }
-        clickPanel.SetActive(true);
+        OpenPanel(Panel.CloseAll);
+        GetClickPanel().SetActive(true);
 
     }
 
