@@ -44,7 +44,6 @@ public class CreateBuilding : MonoBehaviour {
 
     void Update()
     {
-        print(gameObject.name + "DZIALAM");
         if (follow)
         {
             ShowDots();
@@ -86,10 +85,10 @@ public class CreateBuilding : MonoBehaviour {
                 build = true;
         }
         else {
-            if (!hit.collider.GetComponent<Point>().type.Equals(PointType.Decoration))
+            if (!hit.collider.GetComponent<Point>().type.Equals(PointType.Decoration)) // czy kafelek w ktory trafilismy jest kafelkiem dekoracyjnym
 				build = true;
         }
-        print(hit.collider.GetComponent<Point>().type + "   build:" + build);
+
         if (build)
 		{
             HideDots();
