@@ -89,6 +89,8 @@ public class CreateBuilding : MonoBehaviour {
 				build = true;
         }
 
+        print(prefab.GetComponent<Building>().type + "   build: " + build);
+
         if (build)
 		{
             HideDots();
