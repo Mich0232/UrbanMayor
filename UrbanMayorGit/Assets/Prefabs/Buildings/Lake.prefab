@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 61403595210238200}
   - component: {fileID: 212600593887586206}
   - component: {fileID: 95606697070413598}
-  - component: {fileID: 114463219944081530}
   m_Layer: 0
   m_Name: Lake
   m_TagString: Untagged
@@ -85,20 +84,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114463219944081530
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1737402180256808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14b3d6b00fca44cd2801bea16803dd0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 8
-  cost: 25
-  xp: 1
 --- !u!212 &212600593887586206
 SpriteRenderer:
   m_ObjectHideFlags: 1

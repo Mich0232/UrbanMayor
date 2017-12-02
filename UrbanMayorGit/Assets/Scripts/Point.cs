@@ -2,10 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PointType
+{
+	Building,
+    Decoration
+}
+
 public class Point : MonoBehaviour {
 
     public int id;
     private Building building;
+    public PointType type;
+
 
     void Awake()
     {

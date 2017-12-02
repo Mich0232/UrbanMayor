@@ -63,5 +63,6 @@ public enum BuildingType
         Casino,
         Jewellery,
         Department,
-        Warehouse
+        Warehouse,
+        Decoration
     }
