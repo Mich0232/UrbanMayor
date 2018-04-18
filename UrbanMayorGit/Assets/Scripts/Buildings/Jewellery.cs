@@ -15,8 +15,8 @@ public class Jewellery : Building {
     public override void Interact()
     {
         base.Interact();
-        //panel.SetActive(true);
-        Debug.Log("Open buy gems panel");
+        UIController.instance.OpenPanel(Panel.Jeweller);
+        UIController.instance.GetClickPanel().SetActive(false);
 
     }
 }

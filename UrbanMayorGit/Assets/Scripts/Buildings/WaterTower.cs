@@ -9,15 +9,22 @@ public class WaterTower : Building
 	public ParticleSystem waterBurst;
 	private ParticleSystem waterSpawner;
 
+
+    public override void TapEffect()
+    {
+        GetComponent<Animator>().SetTrigger("Tap");
+        if (waterSpawner != null)
+            waterSpawner.Emit(1);
+        GameController.instance.AddWater();
+        GameController.instance.AddXP(1);
+    }
+
 	public override void Interact()
 	{
 		base.Interact();
-		GetComponent<Animator>().SetTrigger("Tap");
-		if (waterSpawner != null)
-			waterSpawner.Emit(1);
-		GameController.instance.AddWater();
-		GameController.instance.AddXP(1);
-	}
+        UIController.instance.OpenPanel(Panel.WaterTower);
+        UIController.instance.GetClickPanel().SetActive(false);
+    }
 
 	public override void OnBuild()
 	{

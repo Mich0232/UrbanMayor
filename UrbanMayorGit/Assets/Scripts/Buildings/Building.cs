@@ -17,6 +17,12 @@ public class Building : MonoBehaviour
 
     bool Build = false;
 
+    private void Start()
+    {
+        if (type == BuildingType.TownHall)
+            Build = true;
+    }
+
     public virtual void OnBuild() {
         // Play build animation
         GetComponent<Animator>().SetBool("Placed", true);
@@ -31,6 +37,8 @@ public class Building : MonoBehaviour
         // Play interact animatio
 
     }
+
+    public virtual void TapEffect() { }
 
     public virtual void DestroyBuilding() { }
     public virtual void Upgrade() {
@@ -55,5 +63,6 @@ public enum BuildingType
         Casino,
         Jewellery,
         Department,
-        Warehouse
+        Warehouse,
+        Decoration
     }

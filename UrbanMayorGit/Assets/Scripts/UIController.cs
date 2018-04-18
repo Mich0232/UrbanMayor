@@ -31,6 +31,7 @@ public class UIController : MonoBehaviour {
 
     [Header("Other")]
     public GameObject clickPanel;
+    public GameObject centerPanel;
     
 
     private void Awake()
@@ -53,8 +54,8 @@ public class UIController : MonoBehaviour {
         basicPowerPlant = GameController.instance.buildPowerPlant.GetComponent<Building>();          
         basicWaterTower = GameController.instance.buildWaterTower.GetComponent<Building>();
 
-		resourceButton.onClick.AddListener(() => basicWaterTower.Interact());
-        resourceButton.onClick.AddListener(() => basicPowerPlant.Interact());
+		resourceButton.onClick.AddListener(() => basicWaterTower.TapEffect());
+        resourceButton.onClick.AddListener(() => basicPowerPlant.TapEffect());
     }
 
     public void UpdateResources() // Refresh gui displays from playerPrefs
@@ -86,11 +87,8 @@ public class UIController : MonoBehaviour {
     public void FocusOnClickPanel()
     {
 
-        foreach (Transform child in clickPanel.transform.parent)
-        {
-            child.gameObject.SetActive(false);
-        }
-        clickPanel.SetActive(true);
+        OpenPanel(Panel.CloseAll);
+        GetClickPanel().SetActive(true);
 
     }
 
@@ -106,4 +104,39 @@ public class UIController : MonoBehaviour {
         lvlDisplay.text = currentLVL.ToString();
     }
 
+    public GameObject GetClickPanel()
+    {
+        return clickPanel;
+    }
+
+    public void OpenPanel(Panel buildingPanel)
+    {
+        //GameObject centerPanel = GameObject.FindGameObjectWithTag("CenterPanel");
+        if (centerPanel == null)
+            return;
+
+        foreach(Transform child in centerPanel.transform)
+        {
+            child.gameObject.SetActive(false);
+
+            if (buildingPanel != Panel.CloseAll && child.CompareTag(buildingPanel.ToString()))
+                child.gameObject.SetActive(true);
+            
+        }
+
+    }
+
+}
+
+public enum Panel
+{
+    Cinema,
+    TownHall,
+    TaxOffice,
+    Jeweller,
+    Hotel,
+    Warehouse,
+    WaterTower,
+    PowerPlant,
+    CloseAll
 }

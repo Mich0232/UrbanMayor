@@ -10,15 +10,22 @@ public class PowerPlant : Building
 
 	private ParticleSystem energySpawner;
 
+    public override void TapEffect()
+    {
+        GetComponent<Animator>().SetTrigger("Tap");
+        if (energySpawner != null)
+            energySpawner.Emit(1);
+        GameController.instance.AddEnergy();
+        GameController.instance.AddXP(1);
+    }
+
 	public override void Interact()
 	{
 		base.Interact();
-		GetComponent<Animator>().SetTrigger("Tap");
-		if (energySpawner != null)
-			energySpawner.Emit(1);
-		GameController.instance.AddEnergy();
-		GameController.instance.AddXP(1);
-	}
+        print("Interact Powerplant");
+        UIController.instance.OpenPanel(Panel.PowerPlant);
+        UIController.instance.GetClickPanel().SetActive(false);
+    }
 
 	public override void OnBuild()
 	{

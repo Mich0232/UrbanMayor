@@ -18,9 +18,13 @@ public class CreateBuilding : MonoBehaviour {
 
     void Start()
     {
-        pointsMap = GameObject.Find("PointsMap");
+        if(prefab.GetComponent<Building>().type!=BuildingType.Decoration)
+            pointsMap = GameObject.Find("PointsMap");
+        else
+            pointsMap = GameObject.Find("AccessoriesMap");
         tutorialTap = GameObject.Find("TutorialTap");
         GetComponentInChildren<Text>().text = prefab.GetComponent<Building>().cost.ToString();
+
     }
 
 
@@ -31,6 +35,7 @@ public class CreateBuilding : MonoBehaviour {
         building.GetComponent<SpriteRenderer>().sortingOrder=2;
         follow = true;
         panelToClose.transform.localScale = new Vector3(0, 0, panelToClose.transform.localScale.z);
+
 		foreach (GameObject icon in GameObject.FindGameObjectsWithTag("icons"))
 		{
 			icon.GetComponent<Image>().color = Color.white;
@@ -44,7 +49,6 @@ public class CreateBuilding : MonoBehaviour {
             ShowDots();
 			FollowMouse();
         }
-
 
         if (Input.GetMouseButtonDown(0))
             if (follow)
@@ -71,9 +75,23 @@ public class CreateBuilding : MonoBehaviour {
 
     public void Snap()
     {
+        
         RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.zero, 100f,points);
+        bool build = false;
 
-        if (hit)
+        if (prefab.GetComponent<Building>().type == BuildingType.Decoration)
+        {
+            if (hit.collider.GetComponent<Point>().type == PointType.Decoration)
+                build = true;
+        }
+        else {
+            if (!hit.collider.GetComponent<Point>().type.Equals(PointType.Decoration)) // czy kafelek w ktory trafilismy jest kafelkiem dekoracyjnym
+				build = true;
+        }
+
+        print(prefab.GetComponent<Building>().type + "   build: " + build);
+
+        if (build)
 		{
             HideDots();
 			Point point = hit.collider.gameObject.GetComponent<Point>();
@@ -125,19 +143,19 @@ public class CreateBuilding : MonoBehaviour {
 
                 UIController.instance.DisableBasicBuildingsInStore();
             }
-                
+            print("Test");
+                UIController.instance.FocusOnClickPanel();
 
 		}
 
 		if (water != null && building.GetComponent<Building>().type == BuildingType.WaterTower)
         {
             gameObject.SetActive(false);
-
         }
 		else if (power != null && building.GetComponent<Building>().type == BuildingType.PowerPlant)
 			gameObject.SetActive(false);
-
-        UIController.instance.FocusOnClickPanel();
+        
+        
     }
 
     public void ShowDots()
